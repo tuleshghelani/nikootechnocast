@@ -17,18 +17,94 @@
 }
 
 .company-profile-section .header-line {
-    /* height: 10px; */
-    width: 450px;
-    border-bottom: 2px solid yellow;
+    width: 250px;
+    border-bottom: 0.2px solid gray;
+    transition: 0.5s;
+}
+
+.dot-icon {
+    font-size: 20px;
+    margin: 0 20px;
+    color: orange;
+}
+
+.header-text {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h1 {
+    transition: 0.5s;
+}
+
+.header-text:hover h1 {
+    color: orange;
+}
+
+.header-text:hover .header-line {
+    width: 270px;
 }
 
 .company-profile-section p {
     color: white;
+    width: 500px;
+    transition: 0.5s;
 }
 
 .company-profile-section .details-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    border: 1px solid whitesmoke;
+    width: 1000px;
+    margin: 30px auto;
+    border-right: 4px solid transparent;
+    transition: 0.5s;
+}
+
+.company-profile-section .details-section:hover {
+    border-right: 4px solid orange;
+    background-color: #131313;
+}
+
+.details-section:hover .company-img img {
+    opacity: 1;
+}
+
+.company-img img {
+    margin-right: 50px;
+    background-color: rgb(254, 241, 0, 0.8);
+    width: 400px;
+    height: auto;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+/* product style */
+.products-section .carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.products-section .carousel-inner {
+    display: flex;
+    /* width: 1000px; */
+    animation: scroll 40s linear infinite;
+}
+
+.products-section .carousel-item {
+    width: 300px;
+    height: auto;
+    display: flex;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }

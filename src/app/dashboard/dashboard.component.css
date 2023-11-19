@@ -12,11 +12,11 @@
     margin: 250px 0;
 }
 
-.company-profile-section h1 {
+.heading-title-text {
     color: whitesmoke;
 }
 
-.company-profile-section .header-line {
+.header-line {
     width: 250px;
     border-bottom: 0.2px solid gray;
     transition: 0.5s;
@@ -81,30 +81,19 @@ h1 {
 }
 
 /* product style */
-.products-section .carousel-container {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-}
-
-.products-section .carousel-inner {
-    display: flex;
-    /* width: 1000px; */
-    animation: scroll 40s linear infinite;
-}
-
-.products-section .carousel-item {
+/* animation: scroll 40s linear infinite; */
+.product-image {
     width: 300px;
     height: auto;
-    display: flex;
+    border-radius: 8px;
 }
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+.certificate-section {
+    margin: 250px 0;
+}
+.certificate-image {
+    width: 350px;
+    height: auto;
+}
+.pdf-download-section {
+    margin: 250px 0;
 }

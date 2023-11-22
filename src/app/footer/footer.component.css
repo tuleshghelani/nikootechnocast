@@ -1,0 +1,57 @@
+.footer-area {
+    /* padding: 20px; */
+    background-color: #131313;
+}
+
+.footer-col {
+    margin-top: 50px;
+}
+
+.footer-content {
+    margin-top: 20px;
+    font-size: 14px;
+    color: whitesmoke;
+    padding: 5px 0;
+}
+
+.footer-col ul {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #FAB829;
+}
+
+.contact-text {
+    color: #FAB829;
+    margin-right: 20px;
+}
+
+.footer-col ul li {
+    font-size: 14px;
+    color: whitesmoke;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 0.3px solid #eeeade;
+}
+
+.copyright-section {
+    padding: 25px;
+    background-color: #0B0B0B;
+}
+
+.copyright-section p {
+    color: whitesmoke;
+}
+
+.copyright-text {
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+.social-icons span {
+    font-size: 22px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: whitesmoke;
+}

@@ -12,4 +12,14 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  facebook() {
+    const url = "https://www.facebook.com/pages/Nikoo-Technocast/122251241258219"
+    window.open(url, '_blank');
+  }
+
+  twitter() {
+    const url = "https://twitter.com/nikootechnocast"
+    window.open(url, '_blank');
+  }
+
 }

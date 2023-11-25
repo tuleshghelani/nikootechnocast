@@ -1,5 +1,6 @@
 .dashboard-section {
     height: 100%;
+    width: 100%;
     background-color: black;
 }
 
@@ -87,13 +88,67 @@ h1 {
     height: auto;
     border-radius: 8px;
 }
+
 .certificate-section {
     margin: 250px 0;
 }
+
 .certificate-image {
     width: 350px;
     height: auto;
 }
+
 .pdf-download-section {
     /* margin: 250px 0; */
+}
+
+@media (max-width: 475px) {
+    .dashboard-section {
+        overflow-x: hidden;
+    }
+
+    .slider-image {
+        width: auto;
+        height: 350px;
+    }
+
+    .company-profile-section {
+        margin: 50px 0;
+    }
+
+    .header-line {
+        width: 120px;
+    }
+
+    .header-text:hover .header-line {
+        width: 140px;
+    }
+    .company-img img {
+        margin-right: 0px !important;
+        width: 326px;
+    }
+    .company-profile-section p {
+        margin-top: 20px;
+        width: 330px;
+    }
+    .company-profile-section .details-section {
+        display: block;
+        border-right: none;
+        width: 100%;
+        border-top: 4px solid transparent;
+    }
+    .company-profile-section .details-section:hover {
+        border-top: 4px solid orange;
+        border-right: none;
+    }
+    .product-image {
+        margin: 15px 0;
+    }
+    .certificate-section {
+        margin: 50px 0;
+    }
+    .certificate-image {
+        width: 300px;
+        margin: 15px 0;
+    }
 }

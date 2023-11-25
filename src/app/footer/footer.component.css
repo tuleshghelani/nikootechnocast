@@ -55,3 +55,13 @@ h2 {
     cursor: pointer;
     color: whitesmoke;
 }
+
+@media (max-width: 475px) {
+    .footer-col img {
+        width: 170px;
+    }
+
+    .copyright-text {
+        font-size: 11px;
+    }
+}

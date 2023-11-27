@@ -1,0 +1,92 @@
+.process-page {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.heading-title-text {
+    color: whitesmoke;
+}
+
+.header-line {
+    width: 250px;
+    border-bottom: 0.2px solid gray;
+    transition: 0.5s;
+}
+
+.dot-icon {
+    font-size: 20px;
+    margin: 0 20px;
+    color: orange;
+}
+
+.header-text {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h1 {
+    transition: 0.5s;
+}
+
+.header-text:hover h1 {
+    color: orange;
+}
+
+.header-text:hover .header-line {
+    width: 270px;
+}
+
+.process-intro-text {
+    color: white;
+}
+
+.yellow-color {
+    color: rgb(254, 241, 0, 0.8)
+}
+
+.details-section h1 {
+    color: white;
+    font-size: 40px;
+    width: 500px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.details-section span {
+    transition: 0.3s;
+}
+
+.details-section:hover span {
+    color: orange;
+    font-size: 60px;
+}
+
+.process-page .details-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 1000px;
+    margin: 30px auto;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transition: 0.5s;
+}
+
+.process-page .details-section:hover {
+    border-left: 4px solid orange;
+    border-right: 4px solid orange;
+    background-color: #131313;
+}
+
+.details-section:hover .company-img img {
+    opacity: 1;
+}
+
+.bullet-arrow {
+    width: 35px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}

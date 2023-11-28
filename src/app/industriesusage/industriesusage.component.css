@@ -1,11 +1,17 @@
 .usage-inds-page {
     height: 100%;
     width: 100%;
-    background-color: black;
+    padding-bottom: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg-images/usage-industries.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity:0.3; */
 }
 
 .heading-title-text {
-    color: whitesmoke;
+    color: orange;
 }
 
 .header-line {
@@ -30,11 +36,18 @@ h1 {
 }
 
 .header-text:hover h1 {
-    color: orange;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .header-text:hover .header-line {
     width: 270px;
+    color: orange;
+}
+
+.header-text:hover .dot-icon {
+    color: black;
 }
 
 .usage-inds-page .details-section {
@@ -77,15 +90,19 @@ h1 {
     margin-right: 50px;
     background-color: rgb(254, 241, 0, 0.8);
     width: 250px;
-    /* min-height: auto; */
     max-height: 140px;
     opacity: 0.6;
     border-radius: 8px;
     transition: 0.5s;
 }
+
 .product-list-section {
-    padding-bottom: 20px;
+    padding: 20px 0;
+    opacity: 0.9;
+    border-radius: 5px;
+    background-color: black;
 }
+
 .product-list-section hr {
     color: #eeeade;
 }

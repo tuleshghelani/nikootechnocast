@@ -14,6 +14,7 @@ import { InfrastructureComponent } from './infrastructure/infrastructure.compone
 import { QmsComponent } from './qms/qms.component';
 import { IndustriesusageComponent } from './industriesusage/industriesusage.component';
 import { CareersComponent } from './careers/careers.component';
+import { SubHeaderComponent } from './sub-header/sub-header.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CareersComponent } from './careers/careers.component';
     InfrastructureComponent,
     QmsComponent,
     IndustriesusageComponent,
-    CareersComponent
+    CareersComponent,
+    SubHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+.sub-header-section {
+    padding-top: 13px;
+    height: 60px;
+    background-color: transparent;
+    border-bottom: 1px solid orange;
+}
+
+.sub-header-section ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 300px;
+}
+
+ul li {
+    margin: 0 20px;
+    list-style: none;
+    display: flex;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+ul li::before {
+    content: "\2022";
+    color: yellow;
+    font-weight: bold;
+    margin-right: 25px;
+    padding-bottom: 5px;
+}
+
+ul li:hover .nav-link {
+    color: yellow !important;
+}

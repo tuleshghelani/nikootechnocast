@@ -33,6 +33,9 @@ ul li:hover .nav-link {
 }
 
 @media (max-width: 475px) {
+    .mobile-screen {
+        display: none;
+    }
     .header-section {
         overflow-x: hidden;
     }

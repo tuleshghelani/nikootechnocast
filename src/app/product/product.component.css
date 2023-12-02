@@ -1,11 +1,16 @@
 .product-page {
     height: 100%;
     width: 100%;
-    background-color: black;
+    padding-bottom: 30px;
+    background-image: url('../../assets/bg-images/product-page-transformed.jpeg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heading-title-text {
-    color: whitesmoke;
+    color: orange;
 }
 
 .header-line {
@@ -30,11 +35,19 @@ h1 {
 }
 
 .header-text:hover h1 {
-    color: orange;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .header-text:hover .header-line {
     width: 270px;
+    color: orange;
+}
+
+.header-text:hover .dot-icon {
+    color: orange;
+    -webkit-text-stroke-color: white;
 }
 
 .product-page .details-section {
@@ -86,6 +99,16 @@ h1 {
     opacity: 0.6;
     border-radius: 8px;
     transition: 0.5s;
+}
+
+.product-list-section {
+    padding: 20px 0;
+    width: 1250px;
+    opacity: 0.9;
+    border-radius: 5px;
+    /* border: 1px solid #eeeade; */
+    box-shadow: #eeeade 0px 6px 24px 0px, #eeeade 0px 0px 0px 1px;
+    background-color: black;
 }
 
 .product-list-section hr {
@@ -145,7 +168,7 @@ h1 {
 
 .product-card:hover {
     background: black;
-    box-shadow: 0 0px 10px darkgray, 0 0px 17px darkcyan;
+    box-shadow: 0 0px 10px darkgray, 0 0px 17px whitesmoke;
 }
 
 .product-image {
@@ -193,6 +216,9 @@ h1 {
 
     .header-line {
         width: 120px;
+    }
+    .product-list-section {
+        width: unset !important;
     }
 
     .header-text:hover .header-line {
@@ -248,4 +274,11 @@ h1 {
     .selected-image {
         width: 322px;
     }
+}
+
+.bullet-arrow {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }

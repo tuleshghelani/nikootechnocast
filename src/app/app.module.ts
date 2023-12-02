@@ -15,6 +15,10 @@ import { QmsComponent } from './qms/qms.component';
 import { IndustriesusageComponent } from './industriesusage/industriesusage.component';
 import { CareersComponent } from './careers/careers.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
+import { CompanyProfileComponent } from './company-profile/company-profile.component';
+import { GroupCompanyComponent } from './group-company/group-company.component';
+import { BusinessInquiryComponent } from './business-inquiry/business-inquiry.component';
+import { FuturePlanComponent } from './future-plan/future-plan.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { SubHeaderComponent } from './sub-header/sub-header.component';
     QmsComponent,
     IndustriesusageComponent,
     CareersComponent,
-    SubHeaderComponent
+    SubHeaderComponent,
+    CompanyProfileComponent,
+    GroupCompanyComponent,
+    BusinessInquiryComponent,
+    FuturePlanComponent
   ],
   imports: [
     BrowserModule,

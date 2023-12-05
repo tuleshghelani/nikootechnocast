@@ -1,0 +1,56 @@
+.contact-page {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg-images/conact-us.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-section {
+    background-color: lightgray;
+    margin: 50px 0;
+    padding: 40px;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+.heading-title-text {
+    color: orange;
+}
+
+.header-line {
+    width: 250px;
+    border-bottom: 0.2px solid gray;
+    transition: 0.5s;
+}
+
+.dot-icon {
+    font-size: 20px;
+    margin: 0 20px;
+    color: orange;
+}
+
+.header-text {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h1 {
+    transition: 0.5s;
+}
+
+.header-text:hover h1 {
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.header-text:hover .header-line {
+    width: 270px;
+}
+
+.header-text:hover .dot-icon {
+    color: black;
+}

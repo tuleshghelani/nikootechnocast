@@ -1,11 +1,15 @@
 .process-page {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg-images/infrastructure.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heading-title-text {
-    color: whitesmoke;
+    color: orange;
 }
 
 .header-line {
@@ -30,11 +34,25 @@ h1 {
 }
 
 .header-text:hover h1 {
-    color: orange;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .header-text:hover .header-line {
     width: 270px;
+    color: orange;
+}
+
+.header-text:hover .dot-icon {
+    color: white;
+}
+
+.infrastructure-section {
+    padding: 20px 0;
+    opacity: 0.8;
+    border-radius: 5px;
+    background-color: black;
 }
 
 .process-intro-text {

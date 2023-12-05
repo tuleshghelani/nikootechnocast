@@ -1,15 +1,11 @@
 .process-page {
     height: 100%;
     width: 100%;
-    /* background-color: black; */
-    /* padding-bottom: 30px; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bg-images/process_page.jpg'); */
     background-image: url('../../assets/bg-images/process_page.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity:0.3; */
 }
 
 .process-header {
@@ -133,4 +129,10 @@ h1 {
 .details-section:hover .chevron-icon:after {
     border-bottom: 5px solid rgb(254, 241, 0, 0.8);
     border-right: 5px solid rgb(254, 241, 0, 0.8);
+}
+.bullet-arrow {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }

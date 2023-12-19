@@ -112,3 +112,46 @@ h1 {
 .yellow-color {
     color: rgb(254, 241, 0, 0.8)
 }
+
+@media (max-width: 475px) {
+    .process-page {
+        overflow-x: hidden;
+    }
+
+    .process-intro-text h3 {
+        font-size: 20px;
+    }
+
+    .header-line {
+        width: 120px;
+    }
+
+    .header-text:hover .header-line {
+        width: 140px;
+    }
+
+    .process-page .details-section {
+        padding: 10px;
+        width: 340px;
+        height: 125px;
+    }
+
+    .details-section h1 {
+        font-size: 20px;
+    }
+
+    .details-section:hover span {
+        font-size: 40px;
+    }
+
+    .company-img {
+        width: 100px;
+    }
+
+    .company-img img {
+        margin-right: 50px;
+        width: 100px;
+        max-height: 120px;
+        transition: 0.5s;
+    }
+}

@@ -70,7 +70,7 @@ h1 {
 }
 
 .usage-inds-page .details-section:hover {
-    background-color: #131313;
+    background-color: #414a4c;
     border-radius: 10px;
 }
 
@@ -100,7 +100,7 @@ h1 {
     padding: 20px 0;
     opacity: 0.9;
     border-radius: 5px;
-    background-color: black;
+    background-color: #0e1111;
 }
 
 .product-list-section hr {

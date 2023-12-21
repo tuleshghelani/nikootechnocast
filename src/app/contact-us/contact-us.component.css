@@ -9,10 +9,11 @@
 }
 
 .contact-section {
-    background-color: lightgray;
+    background-color: #565656;
     margin: 50px 0;
     padding: 40px;
     border-radius: 8px;
+    width: 1700px !important;
     opacity: 0.8;
 }
 
@@ -53,4 +54,32 @@ h1 {
 
 .header-text:hover .dot-icon {
     color: black;
+}
+
+.contact-row {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #232b2b 0px 2px 16px 0px;
+    border-radius: 8px;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 30px;
+}
+.contact-row h2{
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #232b2b;
+    color: whitesmoke;
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.contact-detail-text {
+    margin: 0px 20px 10px 20px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+@media (max-width: 475px) {
+    .contact-page {
+        overflow-x: hidden;
+    }
 }

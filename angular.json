@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nikootechnocast:build:production"
+              "buildTarget": "nikootechnocast:build:production"
             },
             "development": {
-              "browserTarget": "nikootechnocast:build:development"
+              "buildTarget": "nikootechnocast:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nikootechnocast:build"
+            "buildTarget": "nikootechnocast:build"
           }
         },
         "test": {

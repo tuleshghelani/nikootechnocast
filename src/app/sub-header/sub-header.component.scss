@@ -1,34 +1,73 @@
-.sub-header-section {
-    padding-top: 13px;
-    height: 60px;
-    background-color: transparent;
-    border-bottom: 1px solid orange;
+@import '../../assets/styles/variables';
+
+.sub-header {
+  background-color: rgba(darken($dark-bg, 3%), 0.95);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba($secondary-color, 0.2);
+  transition: all 0.3s ease;
 }
 
-.sub-header-section ul {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 300px;
+.sub-header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-left: 1.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .sub-nav-link {
+      color: $gray-text;
+      font-size: 0.8rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $secondary-color;
+        transition: all 0.3s ease;
+      }
+
+      &:hover, &.active {
+        color: $secondary-color;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
-ul li {
-    margin: 0 20px;
-    list-style: none;
-    display: flex;
-    color: whitesmoke;
-    align-items: center;
+@media (max-width: $breakpoint-large) {
+  .sub-header-nav {
     justify-content: center;
-    transition: 0.3s;
-}
-ul li::before {
-    content: "\2022";
-    color: yellow;
-    font-weight: bold;
-    margin-right: 25px;
-    padding-bottom: 5px;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0.25rem 0.75rem;
+    }
+  }
 }
 
-ul li:hover .nav-link {
-    color: yellow !important;
+@media (max-width: $breakpoint-medium) {
+  .sub-header {
+    padding: 0.25rem 0;
+  }
+
+  .sub-header-nav li .sub-nav-link {
+    font-size: 0.75rem;
+  }
 }

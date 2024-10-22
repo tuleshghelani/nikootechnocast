@@ -6,7 +6,8 @@
 
 .slider-image {
     width: 100%;
-    height: 860px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .company-profile-section {
@@ -153,4 +154,165 @@ h1 {
         width: 300px;
         margin: 15px 0;
     }
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  max-width: 600px;
+}
+
+.slider-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.slider-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.slider-description {
+  font-size: 1rem;
+  color: white;
+}
+
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-item.active .animate-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-item.active .slider-title {
+  transition-delay: 0.2s;
+}
+
+.carousel-item.active .slider-subtitle {
+  transition-delay: 0.4s;
+}
+
+.carousel-item.active .slider-description {
+  transition-delay: 0.6s;
+}
+
+@media (max-width: 1200px) {
+  .slider-title {
+    font-size: 2.2rem;
+  }
+  .slider-subtitle {
+    font-size: 1.3rem;
+  }
+  .slider-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-caption {
+    max-width: 500px;
+  }
+  .slider-title {
+    font-size: 2rem;
+  }
+  .slider-subtitle {
+    font-size: 1.2rem;
+  }
+  .slider-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    left: 5%;
+    max-width: 90%;
+  }
+  .slider-title {
+    font-size: 1.8rem;
+  }
+  .slider-subtitle {
+    font-size: 1.1rem;
+  }
+  .slider-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 50vh;
+  }
+
+  .carousel-caption {
+    top: 30%;
+  }
+
+  .slider-title {
+    font-size: 1.5rem;
+  }
+
+  .slider-subtitle {
+    font-size: 1rem;
+  }
+
+  .slider-description {
+    font-size: 0.8rem;
+  }
+
+  .custom-indicators {
+    bottom: 10px;
+  }
+
+  .indicator-number {
+    font-size: 1rem;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators button {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
 }
